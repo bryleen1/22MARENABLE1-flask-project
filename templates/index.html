@@ -9,9 +9,7 @@
     <table style="width:50%">
         <tr>
             <th><h2>Task</h2></th>
-            <th><h2>Progress<h2></th>
             <th><h2>Date Added<h2></th>
-            <th><h2>Date Completed<h2></th>
             <th><h2>Actions<h2></th>
         </tr>
         {% for task in tasks %}
@@ -19,20 +17,16 @@
                 <td>{{ task.content }}</td>
                 <td></td>
                 <td>{{ task.date_created.date() }}</td>
-                <td>{{ task.date_completed.date() }}</td>
                 <td>
-                    <a href="">Delete</a>
+                    <a href="/delete/{{task.id}}">Delete</a>
                     <br>
-                    <a href="">Update</a>
+                    <a href="/update/{{task.id}}">Update</a>
                 </td>
             </tr>
         {% endfor %}
     </table>
-
-    <form action="/" method="Post">
-        <input type="text" name="content" id="content">
-        <input type="submit" value="Add task"
-    </form>
+    <div></div>
+    
 
 </div>
 {% endblock body %}
