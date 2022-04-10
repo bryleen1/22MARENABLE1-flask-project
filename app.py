@@ -6,7 +6,7 @@ from wtforms import StringField, SubmitField
 import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@35.197.195.21:3306/testdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
 app.config['SECRET_KEY'] = 'YOUR_SECRET_KEY'
 
 db = SQLAlchemy(app)
@@ -16,8 +16,7 @@ class Todo(db.Model):
     content = db.Column(db.String(200), nullable=False)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
-    def __repr__(self):
-        return '<Task %r>' % self.id
+
 
 class TaskForm(FlaskForm):
     content =  StringField('Enter Task')
