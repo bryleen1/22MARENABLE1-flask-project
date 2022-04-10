@@ -16,7 +16,10 @@ class Todo(db.Model):
     content = db.Column(db.String(200), nullable=False)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
-
+class Person(db.Model):
+    name = db.Column(db.String(30), nullable=False)
+    lastname = db.Column(db.String(30), nullable=False)
+    email = db.Column(db.String(30), nullable=False, unique=True)
 
 class TaskForm(FlaskForm):
     content =  StringField('Enter Task')
