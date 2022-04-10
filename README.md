@@ -1,2 +1,2 @@
 # 22MARENABLE1-flask-project
-DevOps Core Fundamental Project Specification
+DevOps Core Fundamental Project
