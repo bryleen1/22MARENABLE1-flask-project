@@ -48,7 +48,7 @@ pygobject==3.26.1
 PyJWT==1.5.3
 PyMySQL==1.0.2
 pyOpenSSL==17.5.0
-pyparsing==3.0.7
+pyparsing==3.0.8
 pyserial==3.4
 pytest==7.0.1
 pytest-cov==3.0.0
