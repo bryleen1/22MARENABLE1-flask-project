@@ -6,7 +6,8 @@ from wtforms import StringField, SubmitField
 import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
+#app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
 app.config['SECRET_KEY'] = 'YOUR_SECRET_KEY'
 
 db = SQLAlchemy(app)
@@ -16,10 +17,10 @@ class Todo(db.Model):
     content = db.Column(db.String(200), nullable=False)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
-class Person(db.Model):
-    name = db.Column(db.String(30), nullable=False)
-    lastname = db.Column(db.String(30), nullable=False)
-    email = db.Column(db.String(30), nullable=False, unique=True)
+# class Person(db.Model):
+#     name = db.Column(db.String(30), nullable=False)
+#     lastname = db.Column(db.String(30), nullable=False)
+#     email = db.Column(db.String(30), nullable=False, unique=True)
 
 class TaskForm(FlaskForm):
     content =  StringField('Enter Task')
