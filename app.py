@@ -6,9 +6,8 @@ from wtforms import StringField, SubmitField
 import os
 
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
-app.config['SECRET_KEY'] = 'YOUR_SECRET_KEY'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URI")
+app.config['SECRET_KEY'] = os.getenv('Key')
 
 db = SQLAlchemy(app)
 
@@ -16,11 +15,14 @@ class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
+    user_id = db.Column(db.Integer, db.ForeignKey(user.id), nullable=False)
 
-# class Person(db.Model):
-#     name = db.Column(db.String(30), nullable=False)
-#     lastname = db.Column(db.String(30), nullable=False)
-#     email = db.Column(db.String(30), nullable=False, unique=True)
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(30), nullable=False)
+    lastname = db.Column(db.String(30), nullable=False)
+    email = db.Column(db.String(30), nullable=False, unique=True)
+    tasks = db.relationship('Task', backref='taskbr')
 
 class TaskForm(FlaskForm):
     content =  StringField('Enter Task')
