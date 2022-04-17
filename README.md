@@ -3,7 +3,7 @@
 ### **Author** – Bryleen Karimakwenda
 
 ## **Objective**
-To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training.
+To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training.  
 Deliverables to meet this objective includes:
 * Managing project progress through the use of a Kanban Board
 * Using a Cloud Hosted managed Database and Compute Engine.
