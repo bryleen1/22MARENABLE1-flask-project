@@ -29,10 +29,13 @@ After coming up with the project idea, I brainstormed my ideas for the app and t
 3. Ability to update a task from the website and the database
 4. Ability to delete a task from the website and the database
 5. An external database hosted on the cloud  
+
 **Should have**  
 1. A progress column whereby the user could say whether they’ve completed or started the task  
+
 **Could have**  
 1. Option for users to send tasks to their emails so that they don’t have to be on the app to see their tasks  
+
 **Won't have**  
 1. A table that saves all the deleted data and updated data (before it is appended)
 2. A registration and login page so that users can have accounts on the app and see their task history 
@@ -44,6 +47,7 @@ User story:
 - As a user I want to see my tasks so that I can see what I have to do.   
 - As a user I want to delete tasks so that I can remove tasks I have completed or no longer want to do.  
 - As a user I want to edit tasks so that I can remove or add more information to my set tasks.  
+
 Acceptance criteria:  
 - Given the user is on the home page. When I enter a task and press the submit button then I should see an updated list of my tasks.  
 - Given the user is on the home page. When I click delete then I should see an updated list of my tasks with the deleted task removed.  
