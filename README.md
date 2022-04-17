@@ -13,4 +13,11 @@ Deliverables to meet this objective includes:
 *	Using Git version control
 *	Automating processes using Jenkins
 
+## **Project proposal**
+I propose to make a flask web application that is simply a digital to-do list. This application will be hosted on a GCP virtual instance and will also use GCP’s database instance. The app will allow the user to input tasks, view tasks, update task inputs and delete tasks. This will fulfil the CRUD functionality requirement of the project.  
+The CRUD functionality of this app is as follows:
+* Create – Inputting tasks
+* Read – Viewing tasks added
+* Update – Editing the content of tasks in the database 
+* Delete – Removing individual tasks from the database 
 
