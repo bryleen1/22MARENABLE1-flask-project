@@ -21,3 +21,18 @@ The CRUD functionality of this app is as follows:
 * Update – Editing the content of tasks in the database 
 * Delete – Removing individual tasks from the database 
 
+## **Project design**
+After coming up with the project idea, I brainstormed my ideas for the app and then used the MoSCoW  prioritisation technique to decide what a minimum viable product would look like.  
+Must have
+---------
+A column with tasks and a column that shows the date the column was added
+An external database hosted on the cloud
+Ability to update a task from the website and the database
+Ability to delete a task from the website and the database
+An external database hosted on the cloud
+Should have
+------------
+A progress column whereby the user could say whether they’ve completed or started the task
+Could have
+-----------
+Option for users to send tasks to their emails so that they don’t have to be on the app to see their tasks 
