@@ -28,8 +28,10 @@ A column with tasks and a column that shows the date the column was added
 An external database hosted on the cloud
 Ability to update a task from the website and the database
 Ability to delete a task from the website and the database
-An external database hosted on the cloud
+An external database hosted on the cloud  
 **Should have**  
-A progress column whereby the user could say whether they’ve completed or started the task
+A progress column whereby the user could say whether they’ve completed or started the task  
 **Could have**  
-Option for users to send tasks to their emails so that they don’t have to be on the app to see their tasks 
+Option for users to send tasks to their emails so that they don’t have to be on the app to see their tasks  
+
+
