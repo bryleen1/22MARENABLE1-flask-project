@@ -113,6 +113,8 @@ Although I managed to produce a viable application, I was only able to complete 
 The Todo2 table adds another column to my current table (seen in the image below). This would allow the app to to be able to identify which tasks belong to which user so as to send the right tasks to the correct user. An updated database is necessary for the next phase of this app, if the app is to send users' set tasks to their emails. The email will also contain the link to the app so that instead of just reading the tasks, the user can interact with them once more. After this phase, I would then look at creating accounts for users (this will also require new table additions).  
 ![image](https://user-images.githubusercontent.com/88090980/163742158-002b59b6-03e0-4826-8bc5-7d14867218fd.png)
 
+Furthermore, going forward, I would like to have my models and routes in seperate files. As the app is developed further, keeping everything in the app.py file will only look messy. 
+
 ## Acknowledgements  
 
 Thanks and credit goes to:
