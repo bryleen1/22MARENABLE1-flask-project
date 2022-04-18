@@ -62,15 +62,4 @@ I generated the Kanban board, shown below, using Jira Software. This helped me f
 
 ### Risk Assessment  
 Below is the risk assessment I developed for possible threats to the project. Some were noted before the project began whilst others where added on as I worked on project.  
-| Description     | Evaluation     | Likelihood     | Impact level     | Responsibility     | Response     | Control measure |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
-
+![image](https://user-images.githubusercontent.com/88090980/163738265-6c53cd43-40e9-466f-9708-829359a2938d.png)
