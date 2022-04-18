@@ -62,4 +62,30 @@ I generated the Kanban board, shown below, using Jira Software. This helped me f
 
 ### Risk Assessment  
 Below is the risk assessment I developed for possible threats to the project. Some were noted before the project began whilst others where added on as I worked on project.  
-![image](https://user-images.githubusercontent.com/88090980/163738265-6c53cd43-40e9-466f-9708-829359a2938d.png)
+![image](https://user-images.githubusercontent.com/88090980/163738265-6c53cd43-40e9-466f-9708-829359a2938d.png)  
+_The Developer responsible is me (Bryleen)._  
+
+## **Flask App Front-end**  
+
+_Create_  
+The user visits the app’s home page via the '/' URL suffix (seen in the image below). This page responds with the form and button for the user to add their task. Above the form you can see the column headers “Tasks, Added, Actions” but there is no data underneath the headers as no tasks have been set. The image below is what the original home page looked like before I moved the title to the middle and changed it to “My to-do list”. Following from this image, you will no longer see the title as “To-do list” with the writing aligned to the left.  
+![image](https://user-images.githubusercontent.com/88090980/163738457-8771e4d1-707a-4c58-937f-fbade3ba2d7c.png)
+
+_Read_  
+Below is an image of what the home page looks like with several task entries. The Actions column has links to delete or update tasks. This action is replicated in the database. The Added column reveals the date the task was added. In the database, we can see the date and time a task was created or updated.  
+![image](https://user-images.githubusercontent.com/88090980/163738671-7019720d-55ca-4176-bcc0-6f6cda4349e9.png)
+
+_Update_  
+When the user clicks update on the first task, the user is redirected to the page shown in the image below. Here the user can edit their previous input before being redicted to their home page (after clicking update task).  
+![image](https://user-images.githubusercontent.com/88090980/163738859-e24cd87c-f132-463f-bf6c-1045576a821b.png)
+
+In this example, the user adds "and clean sink" to the first task. This is shown in the image below.  
+![image](https://user-images.githubusercontent.com/88090980/163738951-054670aa-6ec8-4b17-b1c1-de478d489486.png)
+
+_Delete_  
+When the user clicks delete on the first task, the task is removed from the list. This is depicted in the image below whereby the updated first task can no longer be seen.  
+![image](https://user-images.githubusercontent.com/88090980/163739070-fb5e4726-8656-4a76-ad81-3203a955925a.png)
+
+
+
+
