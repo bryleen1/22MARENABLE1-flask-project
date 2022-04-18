@@ -49,10 +49,14 @@ User story:
 - As a user I want to edit tasks so that I can remove or add more information to my set tasks.  
 
 Acceptance criteria:  
-- Given the user is on the home page. When I enter a task and press the submit button then I should see an updated list of my tasks.  
+- Given the user is on the home page. When I enter a task and press the submit button then I should see an updated list of my tasks.
+- Given the user is on the home page. I should see all my task entries and the date I entered them. 
 - Given the user is on the home page. When I click delete then I should see an updated list of my tasks with the deleted task removed.  
 - Given the user is on the home page. When I click update then I should be moved to another page and be able to append the task.  
 
+### Kanban board
+I generated the Kanban board, shown below, using Jira Software. This helped me farmiliarise myself with the software and visualise the tasks I had to complete for the project. The "Create a Flask Web App" had 3 child issues and the "Automate app processes using Jenkins" task had 2 child issues. Child issues are simply sub-tasks needed to be completed to complete the task.  
+![image](https://user-images.githubusercontent.com/88090980/163737568-32c2b9ff-c9b9-4aa3-8fcc-74b2becc5818.png)
 
 
 
