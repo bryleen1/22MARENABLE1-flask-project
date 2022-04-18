@@ -68,24 +68,46 @@ _The Developer responsible is me (Bryleen)._
 ## **Flask App Front-end**  
 
 _Create_  
+
 The user visits the app’s home page via the '/' URL suffix (seen in the image below). This page responds with the form and button for the user to add their task. Above the form you can see the column headers “Tasks, Added, Actions” but there is no data underneath the headers as no tasks have been set. The image below is what the original home page looked like before I moved the title to the middle and changed it to “My to-do list”. Following from this image, you will no longer see the title as “To-do list” with the writing aligned to the left.  
+
 ![image](https://user-images.githubusercontent.com/88090980/163738457-8771e4d1-707a-4c58-937f-fbade3ba2d7c.png)
 
 _Read_  
+
 Below is an image of what the home page looks like with several task entries. The Actions column has links to delete or update tasks. This action is replicated in the database. The Added column reveals the date the task was added. In the database, we can see the date and time a task was created or updated.  
+
 ![image](https://user-images.githubusercontent.com/88090980/163738671-7019720d-55ca-4176-bcc0-6f6cda4349e9.png)
 
 _Update_  
+
 When the user clicks update on the first task, the user is redirected to the page shown in the image below. Here the user can edit their previous input before being redicted to their home page (after clicking update task).  
+
 ![image](https://user-images.githubusercontent.com/88090980/163738859-e24cd87c-f132-463f-bf6c-1045576a821b.png)
 
 In this example, the user adds "and clean sink" to the first task. This is shown in the image below.  
 ![image](https://user-images.githubusercontent.com/88090980/163738951-054670aa-6ec8-4b17-b1c1-de478d489486.png)
 
 _Delete_  
+
 When the user clicks delete on the first task, the task is removed from the list. This is depicted in the image below whereby the updated first task can no longer be seen.  
+
 ![image](https://user-images.githubusercontent.com/88090980/163739070-fb5e4726-8656-4a76-ad81-3203a955925a.png)
 
+## Tests and automation  
+As seen in the image below, 100% of my tests are found in the file tests_app.py in the tests folder and there is 83% coverage. The tests test the home page URL endpoint, that the database is working, that page redirections are followed and that tasks added by users are appearing on the page. Testing that the home page is functional is important as that is where the user will see their tasks as well as be able to make task entries. Testing database functionality is important as it reveals whether the app’s front-end is correctly interacting with the back-end or else a lot of data will not be collected, updated or deleted from the database. There are a lot of page redirections associated with POST actions so it was important to test that the pages are redirecting accordingly. To ensure 100% coverage, the update route should have been tested. I could have tested that folllowing an update, the page redirects and shows the updated task on the page and in the databse. Given more time, I would have added those tests.  
 
+![image](https://user-images.githubusercontent.com/88090980/163739410-8b791387-e977-4edf-900c-90375fc1bc73.png)
+
+At the time of testing, the app passes all of the tests ran and to automate this testing process, I installed Jenkins to run the tests for my app. Jenkins clones my GitHub repository, creates a virtual environment, installs my app’s required packages and runs my tests.  
+
+![image](https://user-images.githubusercontent.com/88090980/163739702-ed41d416-f083-45af-90aa-716527ce50e3.png)
+![image](https://user-images.githubusercontent.com/88090980/163739719-5609c17e-2d15-4cbe-a48a-a613c2b17efd.png)
+
+The job was successful (which can be seen after the tests are run and from the green tick in front of “Console Output”). This means all steps in the job were completed without fail.  
+
+## Future developments  
+
+Although I managed to produce a viable application, I was only able to complete my must haves for the app. As I have already created the user table (seen in the image below), the next phase of this app, aside from having a progress column, would be having a page that collects user's information so as to send the tasks to the user in the form of an email. The email will also contain the link to the app so that instead of just reading the tasks, the user can interact with them once more. After this phase, I would then look at creating accounts for users.
 
 
