@@ -22,7 +22,8 @@ The CRUD functionality of this app is as follows:
 * Delete – Removing individual tasks from the database 
 
 ## **Project design**
-After coming up with the project idea, I brainstormed my ideas for the app and then used the MoSCoW  prioritisation technique to decide what a minimum viable product would look like.  
+After coming up with the project proposal, I brainstormed my ideas for the app and then used the MoSCoW  prioritisation technique to decide what a minimum viable product would look like.  
+
 **Must have**  
 1. A column with tasks and a column that shows the date the column was added
 2. An external database hosted on the cloud
