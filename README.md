@@ -58,6 +58,19 @@ Acceptance criteria:
 I generated the Kanban board, shown below, using Jira Software. This helped me farmiliarise myself with the software and visualise the tasks I had to complete for the project. The "Create a Flask Web App" had 3 child issues and the "Automate app processes using Jenkins" task had 2 child issues. Child issues are simply sub-tasks needed to be completed to complete the task.  
 ![image](https://user-images.githubusercontent.com/88090980/163737568-32c2b9ff-c9b9-4aa3-8fcc-74b2becc5818.png)
 
+### Entity Relationships
 
+### Risk Assessment  
+Below is the risk assessment I developed for possible threats to the project. Some were noted before the project began whilst others where added on as I worked on project.  
+| Description     | Evaluation     | Likelihood     | Impact level     | Responsibility     | Response     | Control measure |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 
