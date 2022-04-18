@@ -59,8 +59,6 @@ Acceptance criteria:
 I generated the Kanban board, shown below, using Jira Software. This helped me farmiliarise myself with the software and visualise the tasks I had to complete for the project. The "Create a Flask Web App" had 3 child issues and the "Automate app processes using Jenkins" task had 2 child issues. Child issues are simply sub-tasks needed to be completed to complete the task.  
 ![image](https://user-images.githubusercontent.com/88090980/163737568-32c2b9ff-c9b9-4aa3-8fcc-74b2becc5818.png)
 
-### Entity Relationships
-
 ### Risk Assessment  
 Below is the risk assessment I developed for possible threats to the project. Some were noted before the project began whilst others where added on as I worked on project.  
 ![image](https://user-images.githubusercontent.com/88090980/163738265-6c53cd43-40e9-466f-9708-829359a2938d.png)  
@@ -112,7 +110,7 @@ The job was successful (which can be seen after the tests are run and from the g
 Although I managed to produce a viable application, I was only able to complete my must haves for the app and the app currently uses only 1 table (Todo). To upgrade to 2 tables and essentially, move along with other app developements listed in my MoSCoW, I would need to upgrade my table and also create a new user table. The updated version of my tables are as below:
 ![image](https://user-images.githubusercontent.com/88090980/163741322-697c7828-ac11-49a0-adf7-99731634d089.png)
 
-The Todo2 table adds another column to my current table (seen in the image below). This would allow the app to to be able to identify which tasks belong to which user so as to send the right tasks to the correct user. An updated database is necessary for the next phase of this app, if the app is to send users' set tasks to their emails. The email will also contain the link to the app so that instead of just reading the tasks, the user can interact with them once more. After this phase, I would then look at creating accounts for users.  
+The Todo2 table adds another column to my current table (seen in the image below). This would allow the app to to be able to identify which tasks belong to which user so as to send the right tasks to the correct user. An updated database is necessary for the next phase of this app, if the app is to send users' set tasks to their emails. The email will also contain the link to the app so that instead of just reading the tasks, the user can interact with them once more. After this phase, I would then look at creating accounts for users (this will also require new table additions).  
 ![image](https://user-images.githubusercontent.com/88090980/163742158-002b59b6-03e0-4826-8bc5-7d14867218fd.png)
 
 ## Acknowledgements  
