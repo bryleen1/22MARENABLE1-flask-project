@@ -108,6 +108,11 @@ The job was successful (which can be seen after the tests are run and from the g
 
 ## Future developments  
 
-Although I managed to produce a viable application, I was only able to complete my must haves for the app. As I have already created the user table (seen in the image below), the next phase of this app, aside from having a progress column, would be having a page that collects user's information so as to send the tasks to the user in the form of an email. The email will also contain the link to the app so that instead of just reading the tasks, the user can interact with them once more. After this phase, I would then look at creating accounts for users.
+Although I managed to produce a viable application, I was only able to complete my must haves for the app and the app currently uses only 1 table (Todo). To upgrade to 2 tables and essentially, move along with other app developements listed in my MoSCoW, I would need to upgrade my table and also create a new user table. The updated version of my tables are as below:
+![image](https://user-images.githubusercontent.com/88090980/163741322-697c7828-ac11-49a0-adf7-99731634d089.png)
+
+The Todo2 table adds another column to my current table (seen in the image below). This would allow the app to to be able to identify which tasks belong to which user so as to send the right tasks to the correct user. An updated database is necessary for the next phase of this app, if the app is to send users' set tasks to their emails. The email will also contain the link to the app so that instead of just reading the tasks, the user can interact with them once more. After this phase, I would then look at creating accounts for users.  
+![image](https://user-images.githubusercontent.com/88090980/163742158-002b59b6-03e0-4826-8bc5-7d14867218fd.png)
+
 
 
