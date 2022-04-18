@@ -15,14 +15,19 @@ class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
-    user_id = db.Column(db.Integer, db.ForeignKey(user.id), nullable=False)
 
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(30), nullable=False)
-    lastname = db.Column(db.String(30), nullable=False)
-    email = db.Column(db.String(30), nullable=False, unique=True)
-    tasks = db.relationship('Task', backref='taskbr')
+#class Todo2(db.Model):
+#    id = db.Column(db.Integer, primary_key=True)
+#    content = db.Column(db.String(200), nullable=False)
+#    date_created = db.Column(db.DateTime, default=datetime.utcnow)
+#    user_id = db.Column(db.Integer, db.ForeignKey(user.id), nullable=False)
+
+#class User(db.Model):
+#    id = db.Column(db.Integer, primary_key=True)
+#    name = db.Column(db.String(30), nullable=False)
+#    lastname = db.Column(db.String(30), nullable=False)
+#    email = db.Column(db.String(30), nullable=False, unique=True)
+#    tasks = db.relationship('Task', backref='taskbr')
 
 class TaskForm(FlaskForm):
     content =  StringField('Enter Task')
@@ -31,7 +36,7 @@ class TaskForm(FlaskForm):
 
 
 @app.route('/', methods=["POST", "GET"])
-def hello_internet():
+def home():
     message = ""
     form = TaskForm()
 
@@ -40,7 +45,7 @@ def hello_internet():
         new_task = Todo(content=form.content.data)
         db.session.add(new_task)
         db.session.commit()
-        return redirect(url_for('hello_internet'))
+        return redirect(url_for('home'))
     else:
         all_tasks = Todo.query.order_by(Todo.date_created).all()
         return render_template('index.html', form=form, message=message, all_tasks=all_tasks)
